@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watchlist HTML</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts - Orbitron -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -65,24 +66,20 @@
     <!-- Header content -->
     <header class="bg-dark-secondary py-4 px-6 flex items-center justify-center">
       <div class="w-full max-w-6xl flex items-center justify-between">
-        <!-- Logo con fuente personalizada -->
+
         <div class="flex items-center space-x-4">
           <h1 class="font-['Orbitron'] text-2xl font-bold text-accent-teal">
             NODO Movies 🎬
           </h1>
         </div>
 
-        <!-- Watchlist y User icon -->
         <div class="flex items-center space-x-4">
-          <!-- Button Watchlist -->
           <button id="openWatchlist"
             class="text-text-primary text-xl font-semibold hover:text-accent-teal transition-colors duration-300">
             Watchlist
           </button>
 
-          <!-- User icon -->
-          <i
-            class="ph ph-user-circle text-4xl text-accent-teal hover:text-button-primary-hover cursor-pointer transition-colors duration-300"></i>
+          <i class="ph ph-user-circle text-4xl text-accent-teal hover:text-button-primary-hover cursor-pointer transition-colors duration-300"></i>
         </div>
       </div>
     </header>
@@ -321,43 +318,31 @@
               </button>
             </div>
           </div>
-
         </div>
       </div>
-
     </main>
 
     <!-- Footer content -->
     <footer class="bg-dark-secondary py-4 px-6 flex items-center justify-center">
       <div class="w-full max-w-6xl flex flex-col items-center space-y-4 text-center">
-        <!-- Texto de la diplomatura -->
         <p class="text-text-secondary text-sm">
           DIPLOMATURA UNIVERSITARIA DESARROLLO WEB FULL STACK CON JAVASCRIPT
         </p>
 
-        <!-- Icono de GitHub con link -->
         <a href="https://github.com/EsteNoEsMonti" target="_blank"
           class="flex items-center space-x-2 text-accent-teal hover:text-button-primary-hover transition-colors duration-300">
           <i class="ph ph-github-logo text-2xl"></i>
           <span class="font-['Orbitron'] text-sm">github.com/EsteNoEsMonti</span>
         </a>
 
-        <!-- Año dinámico -->
         <p class="text-text-secondary text-sm">
           &copy; <span id="currentYear"></span>
         </p>
       </div>
     </footer>
-
-    <script>
-      // Actualizar el año dinámicamente
-      document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-
-
   </div>
 
-  <!-- Scripts personalizados -->
+  <!-- Scripts -->
   <script src="js/main.js"></script>
 </body>
 

@@ -1,4 +1,6 @@
 // @ts-nocheck
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
 document.addEventListener('DOMContentLoaded', () => {
   const openWatchlist = document.getElementById('openWatchlist');
   const watchlistModal = document.getElementById('watchlistModal');
